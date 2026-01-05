@@ -1,3 +1,11 @@
 Alpha 0.1:
 
 - Created the project
+
+Alpha 0.2:
+
+- Started working on the intro screen
+- Added a whole bunch of sprites and (unused for now) audio
+- Animated the first part of the intro
+
+# I still need to figure out how i'm going to make people create music properly. It's not an easy task I don't think lol

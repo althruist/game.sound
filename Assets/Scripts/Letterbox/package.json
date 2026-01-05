@@ -1,0 +1,10 @@
+{
+  "name": "com.althruist.cinematicletterbox",
+  "version": "1.0.0",
+  "displayName": "Cinematic Letterbox",
+  "description": "my own custom letterbox cinematic system!",
+  "unity": "6000.2",
+  "author": {
+    "name": "althruist"
+  },
+}

@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 4976f17ddec8be841ae13b4e00641224
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -937266714369388880
+    second: TISYAUCP_2_0
+  - first:
+      213: -1666373869761885771
+    second: TISYAUCP_2_1
+  - first:
+      213: -2753680899099381580
+    second: TISYAUCP_2_2
+  - first:
+      213: 2504915821861981294
+    second: TISYAUCP_2_3
+  - first:
+      213: 693977619650085143
+    second: TISYAUCP_2_4
+  - first:
+      213: 9036001973738988313
+    second: TISYAUCP_2_5
+  - first:
+      213: -4012414006090111056
+    second: TISYAUCP_2_6
+  - first:
+      213: 1616551804912360887
+    second: TISYAUCP_2_7
+  - first:
+      213: -6703329968711863527
+    second: TISYAUCP_2_8
+  - first:
+      213: 7707794457579207569
+    second: TISYAUCP_2_9
+  - first:
+      213: 6469746572743519300
+    second: TISYAUCP_2_10
+  - first:
+      213: 7908054579572859394
+    second: TISYAUCP_2_11
+  - first:
+      213: -2579477647403948463
+    second: TISYAUCP_2_12
+  - first:
+      213: 2992364482363755952
+    second: TISYAUCP_2_13
+  - first:
+      213: -6688283935083113668
+    second: TISYAUCP_2_14
+  - first:
+      213: 4882501377533037589
+    second: TISYAUCP_2_15
+  - first:
+      213: 7385858000182362986
+    second: TISYAUCP_2_16
+  - first:
+      213: -4726739398594669539
+    second: TISYAUCP_2_17
+  - first:
+      213: -5231257538039521711
+    second: TISYAUCP_2_18
+  - first:
+      213: -7286819463107435747
+    second: TISYAUCP_2_19
+  - first:
+      213: -112141358735804664
+    second: TISYAUCP_2_20
+  - first:
+      213: 1337264833368748718
+    second: TISYAUCP_2_21
+  - first:
+      213: -4783064346499613300
+    second: TISYAUCP_2_22
+  - first:
+      213: 2253218831300257476
+    second: TISYAUCP_2_23
+  - first:
+      213: 850577859421845387
+    second: TISYAUCP_2_24
+  - first:
+      213: 4474214107768582707
+    second: TISYAUCP_2_25
+  - first:
+      213: -7843575868298812527
+    second: TISYAUCP_2_26
+  - first:
+      213: 368348230015434277
+    second: TISYAUCP_2_27
+  - first:
+      213: 4553379646129149466
+    second: TISYAUCP_2_28
+  - first:
+      213: -6873467599732350216
+    second: TISYAUCP_2_29
+  - first:
+      213: 3034097540174673669
+    second: TISYAUCP_2_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TISYAUCP_2_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 54
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be073e93e82ef2f0800000000000000
+      internalID: -937266714369388880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 53
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b989d55bc9dfd8e0800000000000000
+      internalID: -1666373869761885771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_2
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 54
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b03768dfc5f8c9d0800000000000000
+      internalID: -2753680899099381580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_3
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 53
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cc65a1baf33c220800000000000000
+      internalID: 2504915821861981294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_4
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 53
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711805dd7f081a900800000000000000
+      internalID: 693977619650085143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 54
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913e07a9be3566d70800000000000000
+      internalID: 9036001973738988313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_6
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 53
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7623b58ba0158c0800000000000000
+      internalID: -4012414006090111056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 54
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd51dc3d452f6610800000000000000
+      internalID: 1616551804912360887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 54
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913f2b2c8ecf8f2a0800000000000000
+      internalID: -6703329968711863527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_9
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 53
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19bbbb5b83697fa60800000000000000
+      internalID: 7707794457579207569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 54
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44cad2fca3829c950800000000000000
+      internalID: 6469746572743519300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 53
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20267dfcdbd0fbd60800000000000000
+      internalID: 7908054579572859394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 54
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1566d601fbad33cd0800000000000000
+      internalID: -2579477647403948463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_13
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 12
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd89c974a3078920800000000000000
+      internalID: 2992364482363755952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_14
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 22
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c335b6472317e23a0800000000000000
+      internalID: -6688283935083113668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 22
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c463f522122c340800000000000000
+      internalID: 4882501377533037589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_16
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 38
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63c85e18b6df7660800000000000000
+      internalID: 7385858000182362986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_17
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 22
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14dbe07f8f376eb0800000000000000
+      internalID: -4726739398594669539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_18
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 22
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ed19c4cf6d667b0800000000000000
+      internalID: -5231257538039521711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_19
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 18
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1324173e4400ea90800000000000000
+      internalID: -7286819463107435747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_20
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 3
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8073ce34708917ef0800000000000000
+      internalID: -112141358735804664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_21
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 2
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2f093e74bee8210800000000000000
+      internalID: 1337264833368748718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8dfd0191542f9db0800000000000000
+      internalID: -4783064346499613300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_23
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 3
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c66fd8c69a054f10800000000000000
+      internalID: 2253218831300257476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_24
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 2
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87b6ac7e0cddcb00800000000000000
+      internalID: 850577859421845387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_25
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 3
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332769e860a971e30800000000000000
+      internalID: 4474214107768582707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_26
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 3
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19329390e45062390800000000000000
+      internalID: -7843575868298812527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_27
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 2
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52eb6bb73c2ac1500800000000000000
+      internalID: 368348230015434277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_28
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 2
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16950fc9aad03f30800000000000000
+      internalID: 4553379646129149466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_29
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2ebce92a98c90a0800000000000000
+      internalID: -6873467599732350216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TISYAUCP_2_30
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5077fff23a74b1a20800000000000000
+      internalID: 3034097540174673669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TISYAUCP_2_0: -937266714369388880
+      TISYAUCP_2_1: -1666373869761885771
+      TISYAUCP_2_10: 6469746572743519300
+      TISYAUCP_2_11: 7908054579572859394
+      TISYAUCP_2_12: -2579477647403948463
+      TISYAUCP_2_13: 2992364482363755952
+      TISYAUCP_2_14: -6688283935083113668
+      TISYAUCP_2_15: 4882501377533037589
+      TISYAUCP_2_16: 7385858000182362986
+      TISYAUCP_2_17: -4726739398594669539
+      TISYAUCP_2_18: -5231257538039521711
+      TISYAUCP_2_19: -7286819463107435747
+      TISYAUCP_2_2: -2753680899099381580
+      TISYAUCP_2_20: -112141358735804664
+      TISYAUCP_2_21: 1337264833368748718
+      TISYAUCP_2_22: -4783064346499613300
+      TISYAUCP_2_23: 2253218831300257476
+      TISYAUCP_2_24: 850577859421845387
+      TISYAUCP_2_25: 4474214107768582707
+      TISYAUCP_2_26: -7843575868298812527
+      TISYAUCP_2_27: 368348230015434277
+      TISYAUCP_2_28: 4553379646129149466
+      TISYAUCP_2_29: -6873467599732350216
+      TISYAUCP_2_3: 2504915821861981294
+      TISYAUCP_2_30: 3034097540174673669
+      TISYAUCP_2_4: 693977619650085143
+      TISYAUCP_2_5: 9036001973738988313
+      TISYAUCP_2_6: -4012414006090111056
+      TISYAUCP_2_7: 1616551804912360887
+      TISYAUCP_2_8: -6703329968711863527
+      TISYAUCP_2_9: 7707794457579207569
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
