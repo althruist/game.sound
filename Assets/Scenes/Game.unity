@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4016f66340165b44db46b1146c73eb40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GridSpawner
+  level: {fileID: 11400000, guid: b819c6a4528e44e5d97d237a67122d41, type: 2}
   width: 6
   height: 6
   spacing: 1.1
@@ -353,7 +354,7 @@ GameObject:
   - component: {fileID: 1096444313}
   m_Layer: 0
   m_Name: Pixel Perfect Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

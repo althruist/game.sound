@@ -3,20 +3,20 @@ using UnityEngine;
 
 public class GridSpawner : MonoBehaviour
 {
+    public LevelData level;
+
     [Header("Grid")]
-    public int width = 6;
-    public int height = 6;
-
-    [Tooltip("Distance between cell centers in world units.")]
+    public int width;
+    public int height;
     public float spacing = 1.1f;
-
     public Cell cellPrefab;
-
-    // Optional: quick lookup if you want it later
     public Dictionary<Vector2Int, Cell> cells = new();
 
     void Start()
     {
+        width = level.gridWidth;
+        height = level.gridHeight;
+
         SpawnCentered();
     }
 
@@ -24,25 +24,27 @@ public class GridSpawner : MonoBehaviour
     {
         cells.Clear();
 
-        // Center the grid around (0,0)
         float offsetX = (width - 1) * spacing * 0.5f;
         float offsetY = (height - 1) * spacing * 0.5f;
 
         for (int y = 0; y < height; y++)
-        for (int x = 0; x < width; x++)
-        {
-            Vector2Int coord = new(x, y);
+            for (int x = 0; x < width; x++)
+            {
+                Vector2Int coord = new(x, y);
+                int flippedY = height - 1 - y;
+                int index = flippedY * width + x;
 
-            Vector3 pos = new Vector3(
-                x * spacing - offsetX,
-                y * spacing - offsetY,
-                0f
-            );
+                Vector3 pos = new Vector3(
+                    x * spacing - offsetX,
+                    y * spacing - offsetY,
+                    0f
+                );
 
-            Cell cell = Instantiate(cellPrefab, pos, Quaternion.identity, transform);
-            cell.coord = coord;
+                Cell cell = Instantiate(cellPrefab, pos, Quaternion.identity, transform);
+                cell.SetCoord(coord);
+                cell.SetCellType(level.cellTypes[index]);
 
-            cells[coord] = cell;
-        }
+                cells[coord] = cell;
+            }
     }
 }
