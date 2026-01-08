@@ -81,13 +81,13 @@ public class CinematicLetterbox : MonoBehaviour
     {
         if (active)
         {
-            TopBorder.DOScale(new Vector3(15, -_distance, 1), _duration).SetEase(_easeType);
-            BottomBorder.DOScale(new Vector3(15, -_distance, 1), _duration).SetEase(_easeType);
+            TopBorder.DOScale(new Vector3(20, -_distance, 1), _duration).SetEase(_easeType);
+            BottomBorder.DOScale(new Vector3(20, -_distance, 1), _duration).SetEase(_easeType);
         }
         else
         {
-            TopBorder.DOScale(new Vector3(15, 0, 1), _duration).SetEase(_easeType);
-            BottomBorder.DOScale(new Vector3(15, 0, 1), _duration).SetEase(_easeType);
+            TopBorder.DOScale(new Vector3(20, 0, 1), _duration).SetEase(_easeType);
+            BottomBorder.DOScale(new Vector3(20, 0, 1), _duration).SetEase(_easeType);
         }
     }
 }
