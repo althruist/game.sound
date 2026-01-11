@@ -8,4 +8,11 @@ Alpha 0.2:
 - Added a whole bunch of sprites and (unused for now) audio
 - Animated the first part of the intro
 
-# I still need to figure out how i'm going to make people create music properly. It's not an easy task I don't think lol
+Alpha 0.3:
+
+- Added Sprite Variants for the cells
+- Game now allows for color variation depending on level
+- Player can now draw on the cell grid (this was hell and back to make)
+- Animated the cells (again.. a bit of a nightmare. I hate transitions.)
+- Further decoupled code
+- Added custom cursor
