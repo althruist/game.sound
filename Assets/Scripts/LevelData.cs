@@ -24,6 +24,12 @@ public class LevelData : ScriptableObject
     public int gridWidth, gridHeight;
     public List<CellType> cellTypes;
 
+    public Color headColor;
+    public Color bodyColor;
+    public Color tileColor;
+    public Color noteColor;
+    public Color sentenceColor;
+
     void OnValidate()
     {
         if (gridWidth < 1) gridWidth = 1;

@@ -42,6 +42,7 @@ public class GridSpawner : MonoBehaviour
 
                 Cell cell = Instantiate(cellPrefab, pos, Quaternion.identity, transform);
                 cell.SetCoord(coord);
+                cell.SetLevel(level);
                 cell.SetCellType(level.cellTypes[index]);
 
                 cells[coord] = cell;

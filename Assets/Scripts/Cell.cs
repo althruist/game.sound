@@ -1,18 +1,48 @@
+using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public enum CellType
 {
     Normal,
     Sentence,
-    Note
+    Note,
+    Head,
+    Body
 }
 public class Cell : MonoBehaviour
 {
     public Vector2Int coord { get; private set; }
     public bool IsDrawn { get; private set; }
     public CellType CellType { get; private set; }
+    public CellType originalCellType { get; private set; }
+    public bool IsHead { get; private set; }
+    public LevelData level { get; private set; }
+    private SpriteRenderer sr;
+    public GameObject vfx;
+    [SerializeField] Sprite tileSprite;
+    [SerializeField] Sprite noteSprite;
+    [SerializeField] Sprite sentenceSprite;
 
-    public void Init(Vector2Int c) => coord = c;
+    void Start()
+    {
+        originalCellType = CellType;
+        Animator anim = GetComponent<Animator>();
+        float randomTime = Random.Range(0f, 1f);
+        anim.Play("IdleCell", 0, randomTime);
+        anim.Update(0f);
+    }
+
+    void Awake()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
+
+
+    public void SetLevel(LevelData lvl)
+    {
+        level = lvl;
+    }
 
     public void SetDrawn(bool value)
     {
@@ -30,10 +60,29 @@ public class Cell : MonoBehaviour
 
         if (CellType == CellType.Sentence)
         {
-            this.GetComponent<SpriteRenderer>().color = Color.red;
-        } else if (CellType == CellType.Note)
+            sr.color = level.sentenceColor;
+            sr.sprite = sentenceSprite;
+            vfx.SetActive(true);
+        }
+        else if (CellType == CellType.Note)
         {
-            this.GetComponent<SpriteRenderer>().color = Color.blue;
+            sr.color = level.noteColor;
+            sr.sprite = noteSprite;
+            vfx.SetActive(true);
+        }
+        else if (CellType == CellType.Head)
+        {
+            sr.color = level.headColor;
+            sr.sprite = tileSprite;
+        }
+        else if (CellType == CellType.Body)
+        {
+            sr.color = level.bodyColor;
+            sr.sprite = tileSprite;
+        }
+        else if (CellType == CellType.Normal)
+        {
+            sr.color = level.tileColor;
         }
     }
 }
