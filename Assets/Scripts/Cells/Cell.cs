@@ -20,9 +20,6 @@ public class Cell : MonoBehaviour
     public LevelData level { get; private set; }
     private SpriteRenderer sr;
     public GameObject vfx;
-    [SerializeField] Sprite tileSprite;
-    [SerializeField] Sprite noteSprite;
-    [SerializeField] Sprite sentenceSprite;
 
     void Start()
     {
@@ -61,24 +58,20 @@ public class Cell : MonoBehaviour
         if (CellType == CellType.Sentence)
         {
             sr.color = level.sentenceColor;
-            sr.sprite = sentenceSprite;
             vfx.SetActive(true);
         }
         else if (CellType == CellType.Note)
         {
             sr.color = level.noteColor;
-            sr.sprite = noteSprite;
             vfx.SetActive(true);
         }
         else if (CellType == CellType.Head)
         {
             sr.color = level.headColor;
-            sr.sprite = tileSprite;
         }
         else if (CellType == CellType.Body)
         {
             sr.color = level.bodyColor;
-            sr.sprite = tileSprite;
         }
         else if (CellType == CellType.Normal)
         {

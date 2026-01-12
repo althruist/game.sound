@@ -22,6 +22,7 @@ public class LevelData : ScriptableObject
     public LevelType levelType;
     public Difficulty difficulty;
     public int gridWidth, gridHeight;
+    public float gridSpacing = 1.1f;
     public List<CellType> cellTypes;
 
     public Color headColor;

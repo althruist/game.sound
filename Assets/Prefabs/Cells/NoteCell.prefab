@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 2744687264604904913}
   - component: {fileID: 2383907031252345034}
   - component: {fileID: 7054794814770499001}
-  - component: {fileID: 586724845537485466}
   - component: {fileID: -5713286148928395339}
+  - component: {fileID: 4980900980062168243}
+  - component: {fileID: -8728676299187468600}
   m_Layer: 0
-  m_Name: Cell
+  m_Name: NoteCell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -319469171194908686, guid: fba565bea2ce1c747b5ce2d51dd479e3, type: 3}
+  m_Sprite: {fileID: -7934468259204654073, guid: f0515993f409d0c4cb0672e456c6f361, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -140,22 +141,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &586724845537485466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3858691355723938651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb205097c4259964b87991f87f1d557a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Cell
-  vfx: {fileID: 8064271930536380845}
-  tileSprite: {fileID: -319469171194908686, guid: fba565bea2ce1c747b5ce2d51dd479e3, type: 3}
-  noteSprite: {fileID: -7934468259204654073, guid: f0515993f409d0c4cb0672e456c6f361, type: 3}
-  sentenceSprite: {fileID: -4056402077841522103, guid: 2b56056993c40a145841b12442c4f6d0, type: 3}
 --- !u!95 &-5713286148928395339
 Animator:
   serializedVersion: 7
@@ -178,6 +163,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4980900980062168243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3858691355723938651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b7d90d40b759cf4ab5d11240756e4dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cell
+  vfx: {fileID: 8064271930536380845}
+--- !u!114 &-8728676299187468600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3858691355723938651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc211888ed9fbe24abf729e90f484f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicCell
 --- !u!1 &8064271930536380845
 GameObject:
   m_ObjectHideFlags: 0

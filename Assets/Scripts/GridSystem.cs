@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor.UI;
 using UnityEngine;
 
 public class GridSpawner : MonoBehaviour
@@ -6,16 +7,20 @@ public class GridSpawner : MonoBehaviour
     public LevelData level;
 
     [Header("Grid")]
-    public int width;
-    public int height;
-    public float spacing = 1.1f;
+    private int width;
+    private int height;
+    private float spacing;
     public Cell cellPrefab;
+    public Cell musicCellPrefab;
+    public Cell sentenceCellPrefab;
+    Cell selectedPrefab = null;
     public Dictionary<Vector2Int, Cell> cells = new();
 
     void Start()
     {
         width = level.gridWidth;
         height = level.gridHeight;
+        spacing = level.gridSpacing;
 
         SpawnCentered();
     }
@@ -40,7 +45,21 @@ public class GridSpawner : MonoBehaviour
                     0f
                 );
 
-                Cell cell = Instantiate(cellPrefab, pos, Quaternion.identity, transform);
+                if (level.cellTypes[index] == CellType.Normal)
+                {
+                    selectedPrefab = cellPrefab;
+                }
+                else if (level.cellTypes[index] == CellType.Sentence)
+                {
+                    selectedPrefab = sentenceCellPrefab;
+                }
+                else if (level.cellTypes[index] == CellType.Note)
+                {
+                    selectedPrefab = musicCellPrefab;
+                }
+
+                Debug.Log(selectedPrefab);
+                Cell cell = Instantiate(selectedPrefab, pos, Quaternion.identity, transform);
                 cell.SetCoord(coord);
                 cell.SetLevel(level);
                 cell.SetCellType(level.cellTypes[index]);
