@@ -1,5 +1,3 @@
-using DG.Tweening;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public enum CellType
@@ -10,11 +8,20 @@ public enum CellType
     Head,
     Body
 }
+
+public enum SoundType
+{
+    Bass,
+    Melody,
+    Chord
+}
+
 public class Cell : MonoBehaviour
 {
     public Vector2Int coord { get; private set; }
     public bool IsDrawn { get; private set; }
     public CellType CellType { get; private set; }
+    public SoundType SoundType { get; private set; }
     public CellType originalCellType { get; private set; }
     public bool IsHead { get; private set; }
     public LevelData level { get; private set; }
@@ -28,6 +35,8 @@ public class Cell : MonoBehaviour
         float randomTime = Random.Range(0f, 1f);
         anim.Play("IdleCell", 0, randomTime);
         anim.Update(0f);
+
+        Debug.Log(originalCellType);
     }
 
     void Awake()

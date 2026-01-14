@@ -81,10 +81,12 @@ public class PathController : MonoBehaviour
         {
             anim.Play("ThroughCell");
             cell.vfx.GetComponent<SpriteRenderer>().color = level.headColor;
-        } else if (!cell.IsDrawn)
+        }
+        else if (!cell.IsDrawn)
         {
             anim.Play("SlowThroughCell");
-        } else
+        }
+        else
         {
             anim.Play("SlowThroughCell1");
         }
@@ -110,8 +112,8 @@ public class PathController : MonoBehaviour
                     oldCell.GetComponent<Animator>().Play("ThroughCell_Reverse");
                     oldCell.vfx.GetComponent<SpriteRenderer>().color = level.noteColor;
                 }
-                path[path.Count - 1].SetCellType(path[path.Count - 1].originalCellType);
-                path[path.Count - 1].SetDrawn(false);
+                oldCell.SetCellType(oldCell.originalCellType);
+                oldCell.SetDrawn(false);
                 cell.SetCellType(CellType.Head);
                 path.RemoveAt(path.Count - 1);
             }

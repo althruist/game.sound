@@ -2,14 +2,6 @@ using UnityEngine;
 
 public class MusicCell : Cell
 {
-    void Start()
-    {
-        Debug.Log("A");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public enum Note { C, D, E, F, G, A, B };
+    private AudioClip sound;
 }

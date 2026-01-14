@@ -246,8 +246,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GridSpawner
   level: {fileID: 11400000, guid: b819c6a4528e44e5d97d237a67122d41, type: 2}
   cellPrefab: {fileID: -399518575946205436, guid: 3c9d1aad19ee9a040b0518aa4d7bfc9d, type: 3}
-  musicCellPrefab: {fileID: 4980900980062168243, guid: 01cf29f9ed0b4d94eb99293c3d8e9456, type: 3}
-  sentenceCellPrefab: {fileID: 8376742106415621830, guid: cd509a6c9e8ef0646bf6192e12e9ebed, type: 3}
+  musicCellPrefab: {fileID: -8728676299187468600, guid: 01cf29f9ed0b4d94eb99293c3d8e9456, type: 3}
+  sentenceCellPrefab: {fileID: 8959258191789806191, guid: cd509a6c9e8ef0646bf6192e12e9ebed, type: 3}
 --- !u!1 &798082303
 GameObject:
   m_ObjectHideFlags: 0

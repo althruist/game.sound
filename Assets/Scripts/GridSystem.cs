@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEditor.UI;
 using UnityEngine;
 
 public class GridSpawner : MonoBehaviour
@@ -18,8 +17,8 @@ public class GridSpawner : MonoBehaviour
 
     void Start()
     {
-        width = level.gridWidth;
-        height = level.gridHeight;
+        width = level.gridSize;
+        height = level.gridSize;
         spacing = level.gridSpacing;
 
         SpawnCentered();
@@ -57,8 +56,6 @@ public class GridSpawner : MonoBehaviour
                 {
                     selectedPrefab = musicCellPrefab;
                 }
-
-                Debug.Log(selectedPrefab);
                 Cell cell = Instantiate(selectedPrefab, pos, Quaternion.identity, transform);
                 cell.SetCoord(coord);
                 cell.SetLevel(level);
