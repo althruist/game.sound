@@ -12,8 +12,24 @@ public class GridSpawner : MonoBehaviour
     public Cell cellPrefab;
     public Cell musicCellPrefab;
     public Cell sentenceCellPrefab;
-    Cell selectedPrefab = null;
     public Dictionary<Vector2Int, Cell> cells = new();
+    int sentenceIndex = 0;
+    int musicIndex = 0;
+
+
+    [Header("Cell Prefabs")]
+    [SerializeField] private List<CellType> prefabTypes;
+    [SerializeField] private List<Cell> prefabList;
+    private Dictionary<CellType, Cell> prefabMap;
+
+    private void Awake()
+    {
+        prefabMap = new Dictionary<CellType, Cell>();
+        for (int i = 0; i < Mathf.Min(prefabTypes.Count, prefabList.Count); i++)
+        {
+            prefabMap[prefabTypes[i]] = prefabList[i];
+        }
+    }
 
     void Start()
     {
@@ -44,22 +60,29 @@ public class GridSpawner : MonoBehaviour
                     0f
                 );
 
-                if (level.cellTypes[index] == CellType.Normal)
+                CellType type = level.cellTypes[index];
+                Cell prefabToSpawn;
+
+                if (!prefabMap.TryGetValue(type, out prefabToSpawn))
                 {
-                    selectedPrefab = cellPrefab;
+                    prefabToSpawn = cellPrefab;
                 }
-                else if (level.cellTypes[index] == CellType.Sentence)
-                {
-                    selectedPrefab = sentenceCellPrefab;
-                }
-                else if (level.cellTypes[index] == CellType.Note)
-                {
-                    selectedPrefab = musicCellPrefab;
-                }
-                Cell cell = Instantiate(selectedPrefab, pos, Quaternion.identity, transform);
+
+                Cell cell = Instantiate(prefabToSpawn, pos, Quaternion.identity, transform);
+
                 cell.SetCoord(coord);
                 cell.SetLevel(level);
                 cell.SetCellType(level.cellTypes[index]);
+
+                if (cell is SentenceCell sentenceCell)
+                {
+                    sentenceCell.SetData(level.sentence[sentenceIndex++]);
+                }
+                else if (cell is MusicCell musicCell)
+                {
+                    musicCell.SetSoundType(level.soundType[musicIndex++]);
+                }
+
 
                 cells[coord] = cell;
             }

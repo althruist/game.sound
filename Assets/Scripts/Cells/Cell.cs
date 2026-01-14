@@ -13,7 +13,8 @@ public enum SoundType
 {
     Bass,
     Melody,
-    Chord
+    Chord,
+    Sentence
 }
 
 public class Cell : MonoBehaviour
@@ -35,8 +36,6 @@ public class Cell : MonoBehaviour
         float randomTime = Random.Range(0f, 1f);
         anim.Play("IdleCell", 0, randomTime);
         anim.Update(0f);
-
-        Debug.Log(originalCellType);
     }
 
     void Awake()
@@ -86,5 +85,9 @@ public class Cell : MonoBehaviour
         {
             sr.color = level.tileColor;
         }
+    }
+
+    public virtual void Activate()
+    {
     }
 }

@@ -16,17 +16,29 @@ MonoBehaviour:
   difficulty: 0
   gridSize: 4
   gridSpacing: 1.2
-  cellTypes: 03000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000000000000100000000000000
+  cellTypes: 03000000010000000000000001000000010000000000000001000000000000000100000000000000000000000100000000000000000000000100000000000000
   sentence:
-  - text: 
-    clip: {fileID: 0}
+  - text: i
+    clip: {fileID: 8300000, guid: 9456aa2b53f6a9e46b9362872ee687a8, type: 3}
     index: 0
-  - text: 
-    clip: {fileID: 0}
-    index: 0
-  - text: 
-    clip: {fileID: 0}
-    index: 0
+  - text: need
+    clip: {fileID: 8300000, guid: d0bdc9d5d34851e4e9511f856de0a911, type: 3}
+    index: 1
+  - text: to
+    clip: {fileID: 8300000, guid: e218b3718b3a5354c81d2ea9f939ccd1, type: 3}
+    index: 2
+  - text: find
+    clip: {fileID: 8300000, guid: 507aafd6e3cf51247837f5038e8da99d, type: 3}
+    index: 3
+  - text: my
+    clip: {fileID: 8300000, guid: ba4f04da8d1da4145803a49c420c0be7, type: 3}
+    index: 4
+  - text: song
+    clip: {fileID: 8300000, guid: d18097a90feb90a4d976f044961a2375, type: 3}
+    index: 5
+  - text: again
+    clip: {fileID: 8300000, guid: 9f47b11c026e90d4e9134a58602c646c, type: 3}
+    index: 6
   soundType: 
   headColor: {r: 0.495283, g: 0.6364667, b: 1, a: 1}
   bodyColor: {r: 0.19339621, g: 0.42455432, b: 1, a: 1}

@@ -97,6 +97,7 @@ public class PathController : MonoBehaviour
         {
             path.Add(cell);
             cell.SetCellType(CellType.Head);
+            cell.Activate();
         }
         else
         {
