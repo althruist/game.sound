@@ -1,12 +1,9 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "LevelData", menuName = "Scriptable Objects/LevelData")]
-
 public class LevelData : ScriptableObject
 {
-
     public enum LevelType
     {
         Sentence,
@@ -25,57 +22,49 @@ public class LevelData : ScriptableObject
     {
         public string text;
         public AudioClip clip;
-        public float index;
+    }
+
+    [System.Serializable]
+    public struct NoteData
+    {
+        public SoundType soundType;
+        public AudioClip clip;
+    }
+
+    [System.Serializable]
+    public struct CellData
+    {
+        public CellType type;
+        public int dataIndex;
+        public SentenceData sentenceData;
+        public NoteData noteData;
     }
 
     public LevelType levelType;
     public Difficulty difficulty;
     public int gridSize;
     public float gridSpacing = 1.1f;
-    public List<CellType> cellTypes;
-    public List<SentenceData> sentence;
-    public List<SoundType> soundType;
+    public List<CellData> cellTypes;
 
     public Color headColor;
     public Color bodyColor;
     public Color tileColor;
     public Color noteColor;
     public Color sentenceColor;
+    public Color backgroundColor;
 
-    void OnValidate()
+    private void OnValidate()
     {
         if (gridSize < 1) gridSize = 1;
 
         int required = gridSize * gridSize;
 
-        if (cellTypes == null) cellTypes = new List<CellType>(required);
+        if (cellTypes == null) cellTypes = new List<CellData>(required);
 
         while (cellTypes.Count < required)
-            cellTypes.Add(CellType.Normal);
+            cellTypes.Add(new CellData { type = CellType.Normal, dataIndex = -1 });
 
         if (cellTypes.Count > required)
             cellTypes.RemoveRange(required, cellTypes.Count - required);
-
-        int sentenceCellsRequired = 0;
-        int musicCellsRequired = 0;
-
-        foreach (var cell in cellTypes)
-        {
-            if (cell == CellType.Sentence) sentenceCellsRequired++;
-            if (cell == CellType.Note) musicCellsRequired++;
-        }
-
-        if (sentence == null) sentence = new List<SentenceData>();
-        if (soundType == null) soundType = new List<SoundType>();
-
-        while (sentence.Count < sentenceCellsRequired)
-            sentence.Add(new SentenceData());
-        while (sentence.Count > sentenceCellsRequired)
-            sentence.RemoveAt(sentence.Count - 1);
-        while (soundType.Count < musicCellsRequired)
-            soundType.Add(SoundType.Melody);
-        while (soundType.Count > musicCellsRequired)
-            soundType.RemoveAt(soundType.Count - 1);
     }
-
 }

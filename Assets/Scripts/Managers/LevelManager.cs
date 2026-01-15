@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GridSpawner : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
     public LevelData level;
 
@@ -13,9 +13,8 @@ public class GridSpawner : MonoBehaviour
     public Cell musicCellPrefab;
     public Cell sentenceCellPrefab;
     public Dictionary<Vector2Int, Cell> cells = new();
-    int sentenceIndex = 0;
-    int musicIndex = 0;
-
+    public GameObject background;
+    public int sentenceCellAmount {get; private set;}
 
     [Header("Cell Prefabs")]
     [SerializeField] private List<CellType> prefabTypes;
@@ -37,6 +36,8 @@ public class GridSpawner : MonoBehaviour
         height = level.gridSize;
         spacing = level.gridSpacing;
 
+        background.GetComponent<SpriteRenderer>().color = level.backgroundColor;
+
         SpawnCentered();
     }
 
@@ -48,6 +49,7 @@ public class GridSpawner : MonoBehaviour
         float offsetY = (height - 1) * spacing * 0.5f;
 
         for (int y = 0; y < height; y++)
+        {
             for (int x = 0; x < width; x++)
             {
                 Vector2Int coord = new(x, y);
@@ -60,31 +62,34 @@ public class GridSpawner : MonoBehaviour
                     0f
                 );
 
-                CellType type = level.cellTypes[index];
-                Cell prefabToSpawn;
+                LevelData.CellData cellData = level.cellTypes[index];
+                CellType type = cellData.type;
 
+                Cell prefabToSpawn;
                 if (!prefabMap.TryGetValue(type, out prefabToSpawn))
                 {
                     prefabToSpawn = cellPrefab;
                 }
 
                 Cell cell = Instantiate(prefabToSpawn, pos, Quaternion.identity, transform);
-
                 cell.SetCoord(coord);
                 cell.SetLevel(level);
-                cell.SetCellType(level.cellTypes[index]);
+                cell.SetCellType(type);
 
-                if (cell is SentenceCell sentenceCell)
+                if (cell is SentenceCell sentenceCell && type == CellType.Sentence)
                 {
-                    sentenceCell.SetData(level.sentence[sentenceIndex++]);
+                    sentenceCell.SetData(cellData.sentenceData);
+                    sentenceCell.SetIndex(cellData.dataIndex);
+                    sentenceCellAmount++;
                 }
-                else if (cell is MusicCell musicCell)
+                else if (cell is MusicCell musicCell && type == CellType.Note)
                 {
-                    musicCell.SetSoundType(level.soundType[musicIndex++]);
+                    musicCell.SetData(cellData.noteData);
+                    musicCell.SetIndex(cellData.dataIndex);
                 }
-
 
                 cells[coord] = cell;
             }
+        }
     }
 }

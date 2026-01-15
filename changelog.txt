@@ -16,3 +16,17 @@ Alpha 0.3:
 - Animated the cells (again.. a bit of a nightmare. I hate transitions.)
 - Further decoupled code
 - Added custom cursor
+
+Alpha 0.4
+
+- Further decoupled code
+- Sentence and Note cells have their own prefabs for their own functionalities (inheritance)
+- Sentence cells emit text and play a syllable when going over them (new anim)
+- Added a background color variable since gradients were a pain
+- Combined Sentence and Note cell data using separate structs but inputted into same CellData
+- Ironed out any path controller bugs
+- Organized hierarchy and assets
+- Added another font (not my own, I don't have the time to make one :[)
+- Added AudioManager
+- Renamed a whole bunch of objects like GridSpawner to Managers (f.ex LevelManager)
+- Created the first proper layout for the first level 

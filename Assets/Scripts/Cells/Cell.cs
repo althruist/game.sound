@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public enum CellType
@@ -28,6 +29,8 @@ public class Cell : MonoBehaviour
     public LevelData level { get; private set; }
     private SpriteRenderer sr;
     public GameObject vfx;
+    public TextMeshPro text;
+    public int index { get; private set; }
 
     void Start()
     {
@@ -57,6 +60,11 @@ public class Cell : MonoBehaviour
     public void SetCoord(Vector2Int value)
     {
         coord = value;
+    }
+
+    public void SetIndex(int value)
+    {
+        index = value;
     }
 
     public void SetCellType(CellType value)

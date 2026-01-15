@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class PathController : MonoBehaviour
+public class PathManager : MonoBehaviour
 {
     [SerializeField] private Camera cam;
     public LevelData level;
+    public TextMeshPro subtitles;
+    public LevelManager levelManager;
 
     private void Awake()
     {
@@ -34,6 +37,7 @@ public class PathController : MonoBehaviour
     private Cell currentCell = null;
     private bool isHeld;
     List<Cell> path = new List<Cell>();
+
     void DetectCell(string phase)
     {
         if (phase == "UP")
@@ -79,7 +83,15 @@ public class PathController : MonoBehaviour
 
         if (cell.vfx.activeInHierarchy && !cell.IsDrawn)
         {
-            anim.Play("ThroughCell");
+            if (cell.CellType == CellType.Sentence)
+            {
+                anim.Play("SentenceHover");
+                subtitles.SetText($"{subtitles.text} {cell.text.text}");
+            }
+            else
+            {
+                anim.Play("ThroughCell");
+            }
             cell.vfx.GetComponent<SpriteRenderer>().color = level.headColor;
         }
         else if (!cell.IsDrawn)
@@ -107,6 +119,7 @@ public class PathController : MonoBehaviour
                 {
                     oldCell.GetComponent<Animator>().Play("ThroughCell_Reverse");
                     oldCell.vfx.GetComponent<SpriteRenderer>().color = level.sentenceColor;
+                    subtitles.SetText(subtitles.text.Replace(oldCell.text.text, "").Trim());
                 }
                 else if (oldCell.originalCellType == CellType.Note)
                 {
