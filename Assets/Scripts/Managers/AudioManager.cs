@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,48 +11,108 @@ public class AudioManager : MonoBehaviour
         public int maxSimultaneous = 1;
         public bool interruptOldest = true;
         public float volume = 1f;
+        [HideInInspector] public List<AudioSource> sources;
     }
-
+    public AudioClip travelLevelSFX;
+    public AudioClip travelLevelFinalSFX;
     public static AudioManager Instance;
     public List<SoundChannel> channels;
-    public AudioSource audioSourcePrefab;
-    private Dictionary<SoundType, List<AudioSource>> activeSources = new();
+
+    public List<LevelData.NoteData> bass = new();
+    public List<LevelData.NoteData> melody = new();
+    public List<LevelData.NoteData> chord = new();
+
+    public void AddNote(LevelData.NoteData note)
+    {
+        switch (note.soundType)
+        {
+            case SoundType.Bass:
+                bass.Add(note);
+                break;
+            case SoundType.Melody:
+                melody.Add(note);
+                break;
+            case SoundType.Chord:
+                chord.Add(note);
+                break;
+        }
+    }
 
     void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         Instance = this;
+        DontDestroyOnLoad(gameObject);
 
         foreach (var channel in channels)
-            activeSources[channel.type] = new List<AudioSource>();
+        {
+            channel.sources = new List<AudioSource>();
+            for (int i = 0; i < channel.maxSimultaneous; i++)
+            {
+                AudioSource src = gameObject.AddComponent<AudioSource>();
+                src.volume = channel.volume;
+                channel.sources.Add(src);
+            }
+        }
     }
 
-    public void Play(AudioClip clip, SoundType type)
+    public AudioSource Play(AudioClip clip, SoundType type)
     {
-        if (!clip) return;
+        if (!clip) return null;
 
         SoundChannel channel = channels.Find(c => c.type == type);
-        var sources = activeSources[type];
+        if (channel == null) return null;
 
-        sources.RemoveAll(s => !s.isPlaying);
+        AudioSource src = channel.sources.Find(s => !s.isPlaying);
 
-        if (sources.Count >= channel.maxSimultaneous)
+        if (src == null)
         {
             if (channel.interruptOldest)
             {
-                sources[0].Stop();
-                sources.RemoveAt(0);
+                src = channel.sources[0];
+                src.Stop();
             }
             else
             {
-                return;
+                return null;
             }
         }
-
-        var src = GetComponent<AudioSource>();
         src.clip = clip;
         src.volume = channel.volume;
         src.Play();
 
-        sources.Add(src);
+        return src;
+    }
+
+    private Dictionary<AudioSource, Coroutine> fadeCoroutines = new();
+
+    public void StartFade(AudioSource src, float startVolume, float targetVolume, float duration)
+    {
+        if (fadeCoroutines.ContainsKey(src) && fadeCoroutines[src] != null)
+        {
+            return;
+        }
+
+        fadeCoroutines[src] = StartCoroutine(FadeIn(src, startVolume, targetVolume, duration));
+    }
+
+    public IEnumerator FadeIn(AudioSource src, float startVolume, float targetVolume, float duration)
+    {
+        float timer = 0f;
+
+        while (timer < duration)
+        {
+            Debug.Log(timer);
+            timer += Time.deltaTime;
+            src.volume = Mathf.Lerp(startVolume, targetVolume, timer / duration);
+            yield return null;
+        }
+
+        src.volume = targetVolume;
     }
 }

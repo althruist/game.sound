@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   vfx: {fileID: 8064271930536380845}
+  text: {fileID: 0}
 --- !u!1 &8064271930536380845
 GameObject:
   m_ObjectHideFlags: 0

@@ -48,9 +48,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CinematicLetterbox
   TopBorder: {fileID: 4444952837300327110}
   BottomBorder: {fileID: 7386789888452653802}
-  _duration: 2
-  _active: 0
-  _distance: 4
+  _duration: 0
+  _active: 1
+  _distance: 10
   _easeType: 21
 --- !u!1 &2011925578850705995
 GameObject:
@@ -79,7 +79,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 5, z: 0}
-  m_LocalScale: {x: 15, y: 0, z: 1}
+  m_LocalScale: {x: 20, y: -10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8878259864456036387}
@@ -169,7 +169,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: -5, z: 0}
-  m_LocalScale: {x: 15, y: 0, z: 1}
+  m_LocalScale: {x: 20, y: -10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8878259864456036387}

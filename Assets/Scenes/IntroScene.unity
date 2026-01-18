@@ -152,6 +152,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7386789888452653802, guid: e7d2eb3dda6a6fa41b8e7bd72cc3790b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386789888452653802, guid: e7d2eb3dda6a6fa41b8e7bd72cc3790b, type: 3}
       propertyPath: m_LocalPosition.y
       value: -6
       objectReference: {fileID: 0}
@@ -200,6 +204,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d2eb3dda6a6fa41b8e7bd72cc3790b, type: 3}
+--- !u!114 &540359635 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7192425710447710883, guid: e7d2eb3dda6a6fa41b8e7bd72cc3790b, type: 3}
+  m_PrefabInstance: {fileID: 435699096}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7e38a6975e20494299e2498950afe56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CinematicLetterbox
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef49c3780877534d9bf46596fd5713f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Intro
+  letterbox: {fileID: 540359635}
   althruistClip: {fileID: 8300000, guid: 7f7daa1ade27cfd4c9d057a05957cf15, type: 3}
   titleClip: {fileID: 8300000, guid: dfdb331249f7e79459d53f7966cb2f02, type: 3}
 --- !u!1 &770175026

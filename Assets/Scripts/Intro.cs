@@ -3,14 +3,13 @@ using UnityEngine;
 public class Intro : MonoBehaviour
 {
     private AudioSource audioSource;
-    private CinematicLetterbox letterbox;
+    public CinematicLetterbox letterbox;
     [SerializeField] AudioClip althruistClip;
     [SerializeField] AudioClip titleClip;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        letterbox = FindFirstObjectByType<CinematicLetterbox>();
     }
 
     public void PlayAlthruist()

@@ -1,7 +1,7 @@
 public class SentenceCell : Cell
 {
     private LevelData.SentenceData data;
-    
+
     public void SetData(LevelData.SentenceData sentenceData)
     {
         data = sentenceData;

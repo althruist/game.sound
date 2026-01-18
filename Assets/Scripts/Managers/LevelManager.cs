@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public LevelData level;
+    private LevelData level;
+    [SerializeField] public List<LevelData> levels;
 
     [Header("Grid")]
     private int width;
@@ -14,7 +15,6 @@ public class LevelManager : MonoBehaviour
     public Cell sentenceCellPrefab;
     public Dictionary<Vector2Int, Cell> cells = new();
     public GameObject background;
-    public int sentenceCellAmount {get; private set;}
 
     [Header("Cell Prefabs")]
     [SerializeField] private List<CellType> prefabTypes;
@@ -30,13 +30,23 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+
     void Start()
     {
+        if (GameManager.Instance != null && GameManager.Instance.currentLevel != null)
+        {
+            level = GameManager.Instance.currentLevel;
+        }
+
         width = level.gridSize;
         height = level.gridSize;
         spacing = level.gridSpacing;
 
         background.GetComponent<SpriteRenderer>().color = level.backgroundColor;
+        if (level.ambience != null)
+        {
+            AudioManager.Instance.Play(level.ambience, SoundType.SFX);
+        }
 
         SpawnCentered();
     }
@@ -75,17 +85,16 @@ public class LevelManager : MonoBehaviour
                 cell.SetCoord(coord);
                 cell.SetLevel(level);
                 cell.SetCellType(type);
+                cell.SetIndex(cellData.dataIndex);
 
                 if (cell is SentenceCell sentenceCell && type == CellType.Sentence)
                 {
                     sentenceCell.SetData(cellData.sentenceData);
-                    sentenceCell.SetIndex(cellData.dataIndex);
-                    sentenceCellAmount++;
                 }
                 else if (cell is MusicCell musicCell && type == CellType.Note)
                 {
+                    cellData.noteData.soundType = level.soundType;
                     musicCell.SetData(cellData.noteData);
-                    musicCell.SetIndex(cellData.dataIndex);
                 }
 
                 cells[coord] = cell;

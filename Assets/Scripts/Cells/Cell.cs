@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -15,7 +16,8 @@ public enum SoundType
     Bass,
     Melody,
     Chord,
-    Sentence
+    Sentence,
+    SFX
 }
 
 public class Cell : MonoBehaviour
@@ -32,13 +34,20 @@ public class Cell : MonoBehaviour
     public TextMeshPro text;
     public int index { get; private set; }
 
+    IEnumerator playAnimation(Animator anim, float randomTime)
+    {
+        float duration = anim.GetCurrentAnimatorStateInfo(0).length;
+        yield return new WaitForSeconds(duration);
+        anim.Play("IdleCell", 0, randomTime);
+        anim.Update(0f);
+    }
+
     void Start()
     {
         originalCellType = CellType;
         Animator anim = GetComponent<Animator>();
         float randomTime = Random.Range(0f, 1f);
-        anim.Play("IdleCell", 0, randomTime);
-        anim.Update(0f);
+        StartCoroutine(playAnimation(anim, randomTime));
     }
 
     void Awake()
@@ -65,6 +74,12 @@ public class Cell : MonoBehaviour
     public void SetIndex(int value)
     {
         index = value;
+    }
+
+    public virtual bool TryGetNoteData(out LevelData.NoteData note)
+    {
+        note = default;
+        return false;
     }
 
     public void SetCellType(CellType value)

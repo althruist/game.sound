@@ -27,8 +27,8 @@ public class LevelData : ScriptableObject
     [System.Serializable]
     public struct NoteData
     {
-        public SoundType soundType;
-        public AudioClip clip;
+        [HideInInspector] public SoundType soundType;
+        [HideInInspector] public AudioClip clip;
     }
 
     [System.Serializable]
@@ -41,10 +41,14 @@ public class LevelData : ScriptableObject
     }
 
     public LevelType levelType;
+    public SoundType soundType;
     public Difficulty difficulty;
+    public int levelIndex;
     public int gridSize;
     public float gridSpacing = 1.1f;
+    public SoundData soundData;
     public List<CellData> cellTypes;
+    public AudioClip ambience;
 
     public Color headColor;
     public Color bodyColor;
