@@ -1,14 +1,12 @@
 using UnityEngine;
 using DG.Tweening;
-using System;
-
 public class CinematicLetterbox : MonoBehaviour
 {
     public static CinematicLetterbox Instance { get; private set; }
 
     [Header("Borders")]
-    [SerializeField] private Transform TopBorder;
-    [SerializeField] private Transform BottomBorder;
+    public Transform TopBorder;
+    public Transform BottomBorder;
 
     [Header("Settings")]
     [SerializeField] private float _duration;

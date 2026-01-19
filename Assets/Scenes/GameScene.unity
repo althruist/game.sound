@@ -823,13 +823,30 @@ MonoBehaviour:
     volume: 1
     sources: []
   - type: 4
-    maxSimultaneous: 2
-    interruptOldest: 1
+    maxSimultaneous: 10
+    interruptOldest: 0
     volume: 1
     sources: []
   bass: []
   melody: []
   chord: []
+  endingDialogue:
+  - text: thank you for giving me my song back
+    clip: {fileID: 8300000, guid: 6f39f84f0ee884e1e823b071c6e1efc5, type: 3}
+  - text: i will be eternally grateful for this
+    clip: {fileID: 8300000, guid: 24c983d9337974387b2f49ff2af3865b, type: 3}
+  - text: i know it might seem so small
+    clip: {fileID: 8300000, guid: f5be496bdb03e4b289eca32d95966110, type: 3}
+  - text: i know it's not the way you wanted it to be
+    clip: {fileID: 8300000, guid: 427e14c4d16ee40b8834cb8767d824f4, type: 3}
+  - text: but no matter how it turns out
+    clip: {fileID: 8300000, guid: 262ff04693d0943f58984a563dd679be, type: 3}
+  - text: it always tells a story
+    clip: {fileID: 8300000, guid: 95c09ef0819ee4fe986414a7b5fa32fc, type: 3}
+  - text: i hope to see you some other day again
+    clip: {fileID: 8300000, guid: a7b76590ebb734242b20d24f92baf287, type: 3}
+  - text: goodbye
+    clip: {fileID: 8300000, guid: b3765350559eb495096b47cab185a6ad, type: 3}
 --- !u!1 &1243733653
 GameObject:
   m_ObjectHideFlags: 0

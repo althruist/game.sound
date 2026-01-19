@@ -3,12 +3,13 @@ using UnityEngine;
 public class Intro : MonoBehaviour
 {
     private AudioSource audioSource;
-    public CinematicLetterbox letterbox;
     [SerializeField] AudioClip althruistClip;
     [SerializeField] AudioClip titleClip;
 
     void Start()
     {
+        CinematicLetterbox.Instance.duration = 0f;
+        CinematicLetterbox.Instance.active = false;
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -24,8 +25,10 @@ public class Intro : MonoBehaviour
 
     public void BlackScreen()
     {
-        letterbox.duration = 0f;
-        letterbox.distance = 10f;
-        letterbox.active = true;
+        CinematicLetterbox.Instance.TopBorder.GetComponent<SpriteRenderer>().color = Color.black;
+        CinematicLetterbox.Instance.BottomBorder.GetComponent<SpriteRenderer>().color = Color.black;
+        CinematicLetterbox.Instance.duration = 0f;
+        CinematicLetterbox.Instance.distance = 10f;
+        CinematicLetterbox.Instance.active = true;
     }
 }

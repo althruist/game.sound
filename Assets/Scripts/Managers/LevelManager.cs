@@ -43,9 +43,10 @@ public class LevelManager : MonoBehaviour
         spacing = level.gridSpacing;
 
         background.GetComponent<SpriteRenderer>().color = level.backgroundColor;
-        if (level.ambience != null)
+        if (level.ambience != null && level.name != "EndScene")
         {
-            AudioManager.Instance.Play(level.ambience, SoundType.SFX);
+            AudioSource src = AudioManager.Instance.Play(level.ambience, SoundType.SFX);
+            src.pitch = 1;
         }
 
         SpawnCentered();

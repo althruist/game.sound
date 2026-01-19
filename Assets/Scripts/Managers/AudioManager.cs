@@ -22,6 +22,8 @@ public class AudioManager : MonoBehaviour
     public List<LevelData.NoteData> melody = new();
     public List<LevelData.NoteData> chord = new();
 
+    public List<LevelData.SentenceData> endingDialogue;
+
     public void AddNote(LevelData.NoteData note)
     {
         switch (note.soundType)

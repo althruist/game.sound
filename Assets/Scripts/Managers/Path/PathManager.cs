@@ -82,14 +82,17 @@ public class PathManager : MonoBehaviour
 
         if (newLevel)
         {
-            AudioManager.Instance.Play(AudioManager.Instance.travelLevelSFX, SoundType.SFX);
+            AudioSource src = AudioManager.Instance.Play(AudioManager.Instance.travelLevelSFX, SoundType.SFX);
+            src.pitch = 1;
             StartCoroutine(LerpBackgroundColor(GameManager.Instance.currentLevel.backgroundColor, newLevel.backgroundColor, 2f));
             yield return new WaitForSeconds(2f);
             GameManager.Instance.LoadNextLevel(newLevel);
         }
         else
         {
-            AudioManager.Instance.Play(AudioManager.Instance.travelLevelFinalSFX, SoundType.SFX);
+            AudioSource src = AudioManager.Instance.Play(AudioManager.Instance.travelLevelFinalSFX, SoundType.SFX);
+            src.volume = 0.5f;
+            src.pitch = 1;
             StartCoroutine(LerpBackgroundColor(GameManager.Instance.currentLevel.backgroundColor, Color.white, 2f));
             yield return new WaitForSeconds(4f);
             GameManager.Instance.LoadLevel("EndScene");

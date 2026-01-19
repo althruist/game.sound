@@ -32,6 +32,7 @@ public class Cell : MonoBehaviour
     private SpriteRenderer sr;
     public GameObject vfx;
     public TextMeshPro text;
+    public AudioClip sound;
     public int index { get; private set; }
 
     IEnumerator playAnimation(Animator anim, float randomTime)
@@ -112,5 +113,7 @@ public class Cell : MonoBehaviour
 
     public virtual void Activate()
     {
+        AudioSource src = AudioManager.Instance.Play(sound, SoundType.SFX);
+        src.pitch = Random.Range(0.9f, 1.3f);
     }
 }
