@@ -204,17 +204,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7d2eb3dda6a6fa41b8e7bd72cc3790b, type: 3}
---- !u!114 &540359635 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7192425710447710883, guid: e7d2eb3dda6a6fa41b8e7bd72cc3790b, type: 3}
-  m_PrefabInstance: {fileID: 435699096}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7e38a6975e20494299e2498950afe56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CinematicLetterbox
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef49c3780877534d9bf46596fd5713f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Intro
-  letterbox: {fileID: 540359635}
   althruistClip: {fileID: 8300000, guid: 7f7daa1ade27cfd4c9d057a05957cf15, type: 3}
   titleClip: {fileID: 8300000, guid: dfdb331249f7e79459d53f7966cb2f02, type: 3}
 --- !u!1 &770175026
@@ -549,9 +537,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
   m_ComponentVersion: 1
   m_AssetsPPU: 120
-  m_RefResolutionX: 1900
+  m_RefResolutionX: 1920
   m_RefResolutionY: 1400
-  m_CropFrame: 0
+  m_CropFrame: 4
   m_GridSnapping: 1
   m_FilterMode: 0
   m_UpscaleRT: 0
@@ -587,14 +575,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 0.013888889
     width: 1
-    height: 1
+    height: 0.97222227
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 5.8333335
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -836,6 +824,159 @@ Transform:
   m_Children: []
   m_Father: {fileID: 754908002}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1484881387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1484881389}
+  - component: {fileID: 1484881388}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1484881388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484881387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ad5753b6659104bbdd281606452a6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  travelLevelSFX: {fileID: 8300000, guid: be023b515adc41f4fbcf56e624718cde, type: 3}
+  travelLevelFinalSFX: {fileID: 8300000, guid: d5ed9e3cfe2087e4d9f7ad8384af8dd5, type: 3}
+  channels:
+  - type: 3
+    maxSimultaneous: 1
+    interruptOldest: 1
+    volume: 1
+    sources: []
+  - type: 0
+    maxSimultaneous: 1
+    interruptOldest: 1
+    volume: 1
+    sources: []
+  - type: 1
+    maxSimultaneous: 3
+    interruptOldest: 1
+    volume: 1
+    sources: []
+  - type: 2
+    maxSimultaneous: 1
+    interruptOldest: 1
+    volume: 1
+    sources: []
+  - type: 4
+    maxSimultaneous: 10
+    interruptOldest: 0
+    volume: 1
+    sources: []
+  bass: []
+  melody: []
+  chord: []
+  endingDialogue:
+  - text: thank you for giving me my song back
+    clip: {fileID: 8300000, guid: 6f39f84f0ee884e1e823b071c6e1efc5, type: 3}
+  - text: i will be eternally grateful for this
+    clip: {fileID: 8300000, guid: 24c983d9337974387b2f49ff2af3865b, type: 3}
+  - text: i know it might seem so small
+    clip: {fileID: 8300000, guid: f5be496bdb03e4b289eca32d95966110, type: 3}
+  - text: i know it's not the way you wanted it to be
+    clip: {fileID: 8300000, guid: 427e14c4d16ee40b8834cb8767d824f4, type: 3}
+  - text: but no matter how it turns out
+    clip: {fileID: 8300000, guid: 262ff04693d0943f58984a563dd679be, type: 3}
+  - text: it always tells a story
+    clip: {fileID: 8300000, guid: 95c09ef0819ee4fe986414a7b5fa32fc, type: 3}
+  - text: i hope to see you some other day again
+    clip: {fileID: 8300000, guid: a7b76590ebb734242b20d24f92baf287, type: 3}
+  - text: goodbye
+    clip: {fileID: 8300000, guid: b3765350559eb495096b47cab185a6ad, type: 3}
+--- !u!4 &1484881389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484881387}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.22913, y: -0.33968, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1731515871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1731515873}
+  - component: {fileID: 1731515872}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1731515872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731515871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff2a00a7af2eb7e42b0b932acf61d54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  gameData: {fileID: 11400000, guid: 032caa0f05bc05b439acf02aa86de7fd, type: 2}
+  currentLevel: {fileID: 11400000, guid: b819c6a4528e44e5d97d237a67122d41, type: 2}
+  easyLevels:
+  - {fileID: 11400000, guid: b819c6a4528e44e5d97d237a67122d41, type: 2}
+  - {fileID: 11400000, guid: 6e9a9a737ba55c14c938a17825e9f1a1, type: 2}
+  - {fileID: 11400000, guid: b46f87db0c8680541be203ec9311fb35, type: 2}
+  - {fileID: 11400000, guid: c6ba00c4ca0524a4d839770ad4061407, type: 2}
+  mediumLevels:
+  - {fileID: 11400000, guid: 8eab2e505329cb443ad3aa5b20b58953, type: 2}
+  - {fileID: 11400000, guid: 13a09b589a9d352409919e9b88cfecc2, type: 2}
+  - {fileID: 11400000, guid: 08a7496e8104aa04ba987b17671112ec, type: 2}
+  - {fileID: 11400000, guid: 8bdbca7a1158d1448b46a5bcd98b5a5c, type: 2}
+  hardLevels:
+  - {fileID: 11400000, guid: 1a534bb5807b2dd4881524e591f10cba, type: 2}
+  - {fileID: 11400000, guid: ddf6b30aa2c3562489076e82d5ad3664, type: 2}
+  - {fileID: 11400000, guid: ee31d8be88be454419ef40606e103e05, type: 2}
+  - {fileID: 11400000, guid: 2119852f7057e4248a8b7aeb2f1773c6, type: 2}
+--- !u!4 &1731515873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731515871}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1797052500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,3 +1188,5 @@ SceneRoots:
   - {fileID: 435699096}
   - {fileID: 754908002}
   - {fileID: 770175030}
+  - {fileID: 1484881389}
+  - {fileID: 1731515873}

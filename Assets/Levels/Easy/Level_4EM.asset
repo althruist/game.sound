@@ -148,10 +148,14 @@ MonoBehaviour:
     noteData:
       soundType: 2
       clip: {fileID: 0}
-  ambience: {fileID: 8300000, guid: 6f722ca26c9919e4b90d9867d5e5404f, type: 3}
   headColor: {r: 0.25, g: 1, b: 0.26496565, a: 1}
   bodyColor: {r: 0.4198113, g: 1, b: 0.7540069, a: 1}
   tileColor: {r: 0.4283444, g: 0.5943396, b: 0.18222678, a: 1}
   noteColor: {r: 1, g: 0.82150066, b: 0.4669811, a: 1}
   sentenceColor: {r: 1, g: 0.504717, b: 0.504717, a: 1}
   backgroundColor: {r: 0.74426615, g: 0.8301887, b: 0.30936277, a: 1}
+  cameraSize: 120
+  sentenceTextSettings:
+    position: {x: 0, y: -3, z: 0}
+    size: {x: 15, y: 5}
+    fontSize: 6.46

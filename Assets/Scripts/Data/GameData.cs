@@ -1,8 +1,8 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "GameData", menuName = "Scriptable Objects/GameData")]
-public class GameData : ScriptableObject
+public abstract class GameData : MonoBehaviour
 {
-    public float songTempo;
+    public static float songTempo = 160f;
+    public static int songsCompleted;
 
 }

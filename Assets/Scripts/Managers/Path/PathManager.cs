@@ -3,6 +3,8 @@ using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Rendering.Universal;
+using DG.Tweening;
 
 public class PathManager : MonoBehaviour
 {
@@ -68,15 +70,22 @@ public class PathManager : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(1.6f);
-        cam.GetComponent<Animator>().Play("CameraZoom");
+        DOTween.To(
+            () => cam.GetComponent<PixelPerfectCamera>().assetsPPU,
+            x => cam.GetComponent<PixelPerfectCamera>().assetsPPU = Mathf.RoundToInt(x),
+            1972,
+            0.7f
+        ).SetEase(Ease.InCirc);
 
         LevelData newLevel = null;
 
         foreach (LevelData level in levelManager.levels)
         {
-            if (GameManager.Instance.currentLevel.difficulty == level.difficulty && level.levelIndex - GameManager.Instance.currentLevel.levelIndex == 1)
+            if (GameManager.Instance.currentLevel.GameDifficulty == level.GameDifficulty && level.LevelIndex - GameManager.Instance.currentLevel.LevelIndex == 1)
             {
                 newLevel = level;
+            } else
+            {
             }
         }
 
@@ -84,7 +93,7 @@ public class PathManager : MonoBehaviour
         {
             AudioSource src = AudioManager.Instance.Play(AudioManager.Instance.travelLevelSFX, SoundType.SFX);
             src.pitch = 1;
-            StartCoroutine(LerpBackgroundColor(GameManager.Instance.currentLevel.backgroundColor, newLevel.backgroundColor, 2f));
+            StartCoroutine(LerpBackgroundColor(GameManager.Instance.currentLevel.BackgroundColor, newLevel.BackgroundColor, 2f));
             yield return new WaitForSeconds(2f);
             GameManager.Instance.LoadNextLevel(newLevel);
         }
@@ -93,7 +102,7 @@ public class PathManager : MonoBehaviour
             AudioSource src = AudioManager.Instance.Play(AudioManager.Instance.travelLevelFinalSFX, SoundType.SFX);
             src.volume = 0.5f;
             src.pitch = 1;
-            StartCoroutine(LerpBackgroundColor(GameManager.Instance.currentLevel.backgroundColor, Color.white, 2f));
+            StartCoroutine(LerpBackgroundColor(GameManager.Instance.currentLevel.BackgroundColor, Color.white, 2f));
             yield return new WaitForSeconds(4f);
             GameManager.Instance.LoadLevel("EndScene");
         }
@@ -142,7 +151,7 @@ public class PathManager : MonoBehaviour
             {
                 anim.Play("ThroughCell");
             }
-            cell.vfx.GetComponent<SpriteRenderer>().color = level.headColor;
+            cell.vfx.GetComponent<SpriteRenderer>().color = level.HeadColor;
         }
         else if (!cell.IsDrawn)
         {
@@ -168,7 +177,7 @@ public class PathManager : MonoBehaviour
                 if (path.oldCell.originalCellType == CellType.Sentence)
                 {
                     path.oldCell.GetComponent<Animator>().Play("ThroughCell_Reverse");
-                    path.oldCell.vfx.GetComponent<SpriteRenderer>().color = level.sentenceColor;
+                    path.oldCell.vfx.GetComponent<SpriteRenderer>().color = level.SentenceColor;
                     subtitles.SetText(
                         Regex.Replace(
                             subtitles.text,
@@ -180,7 +189,7 @@ public class PathManager : MonoBehaviour
                 else if (path.oldCell.originalCellType == CellType.Note)
                 {
                     path.oldCell.GetComponent<Animator>().Play("ThroughCell_Reverse");
-                    path.oldCell.vfx.GetComponent<SpriteRenderer>().color = level.noteColor;
+                    path.oldCell.vfx.GetComponent<SpriteRenderer>().color = level.NoteColor;
                 }
                 path.oldCell.SetCellType(path.oldCell.originalCellType);
                 path.oldCell.SetDrawn(false);
@@ -196,7 +205,7 @@ public class PathManager : MonoBehaviour
             }
         }
 
-        if ((level.gridSize * level.gridSize) == path.cells.Count)
+        if ((level.GridSize * level.GridSize) == path.cells.Count)
         {
             List<int> tempCells = new List<int>();
             foreach (Cell el in path.cells)
@@ -224,7 +233,7 @@ public class PathManager : MonoBehaviour
                 path.SetVariable(Path.PathVariable.Held, false);
                 StartCoroutine(ProgressToLevelAnimation());
 
-                if (level.levelType == LevelData.LevelType.Note)
+                if (level.GameLevelType == LevelData.LevelType.Note)
                 {
                     foreach (Cell nCell in path.cells)
                     {
@@ -235,7 +244,7 @@ public class PathManager : MonoBehaviour
                         else
                         {
                             LevelData.NoteData data = new LevelData.NoteData();
-                            data.soundType = level.soundType;
+                            data.soundType = level.SoundType;
                             AudioManager.Instance.AddNote(data);
                         }
                     }

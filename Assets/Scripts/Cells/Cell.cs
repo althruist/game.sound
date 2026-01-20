@@ -89,25 +89,25 @@ public class Cell : MonoBehaviour
 
         if (CellType == CellType.Sentence)
         {
-            sr.color = level.sentenceColor;
+            sr.color = level.SentenceColor;
             vfx.SetActive(true);
         }
         else if (CellType == CellType.Note)
         {
-            sr.color = level.noteColor;
+            sr.color = level.NoteColor;
             vfx.SetActive(true);
         }
         else if (CellType == CellType.Head)
         {
-            sr.color = level.headColor;
+            sr.color = level.HeadColor;
         }
         else if (CellType == CellType.Body)
         {
-            sr.color = level.bodyColor;
+            sr.color = level.BodyColor;
         }
         else if (CellType == CellType.Normal)
         {
-            sr.color = level.tileColor;
+            sr.color = level.TileColor;
         }
     }
 

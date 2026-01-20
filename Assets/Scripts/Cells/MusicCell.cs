@@ -16,7 +16,7 @@ public class MusicCell : Cell
         data = lData;
         soundType = data.soundType;
 
-        foreach (SoundClips audio in level.soundData.soundClips)
+        foreach (SoundClips audio in level.SoundData.soundClips)
         {
             if (audio.type == soundType)
             {

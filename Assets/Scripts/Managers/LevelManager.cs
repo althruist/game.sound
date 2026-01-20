@@ -1,10 +1,15 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
     private LevelData level;
     [SerializeField] public List<LevelData> levels;
+    public static LevelManager Instance;
+    [SerializeField] private Camera cam;
 
     [Header("Grid")]
     private int width;
@@ -15,6 +20,7 @@ public class LevelManager : MonoBehaviour
     public Cell sentenceCellPrefab;
     public Dictionary<Vector2Int, Cell> cells = new();
     public GameObject background;
+    public TextMeshPro subtitles;
 
     [Header("Cell Prefabs")]
     [SerializeField] private List<CellType> prefabTypes;
@@ -23,6 +29,15 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
+        if (!cam) cam = Camera.main;
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+
         prefabMap = new Dictionary<CellType, Cell>();
         for (int i = 0; i < Mathf.Min(prefabTypes.Count, prefabList.Count); i++)
         {
@@ -30,24 +45,41 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-
     void Start()
     {
+        subtitles.rectTransform.localPosition = GameManager.Instance.currentLevel.SentenceTextSettings.position;
+        subtitles.rectTransform.sizeDelta = GameManager.Instance.currentLevel.SentenceTextSettings.size;
+        subtitles.fontSize = GameManager.Instance.currentLevel.SentenceTextSettings.fontSize;
+
         if (GameManager.Instance != null && GameManager.Instance.currentLevel != null)
         {
             level = GameManager.Instance.currentLevel;
         }
 
-        width = level.gridSize;
-        height = level.gridSize;
-        spacing = level.gridSpacing;
-
-        background.GetComponent<SpriteRenderer>().color = level.backgroundColor;
-        if (level.ambience != null && level.name != "EndScene")
+        if (level.GameDifficulty == LevelData.Difficulty.Easy)
         {
-            AudioSource src = AudioManager.Instance.Play(level.ambience, SoundType.SFX);
-            src.pitch = 1;
+            Instance.levels = GameManager.Instance.easyLevels;
         }
+        else if (level.GameDifficulty == LevelData.Difficulty.Medium)
+        {
+            Instance.levels = GameManager.Instance.mediumLevels;
+        }
+        else if (level.GameDifficulty == LevelData.Difficulty.Hard)
+        {
+            Instance.levels = GameManager.Instance.hardLevels;
+        }
+
+        if (SceneManager.GetActiveScene().name != "GameScene")
+        {
+            return;
+        }
+        
+        cam.GetComponent<PixelPerfectCamera>().assetsPPU = level.CameraSize;
+        width = level.GridSize;
+        height = level.GridSize;
+        spacing = level.GridSpacing;
+
+        background.GetComponent<SpriteRenderer>().color = level.BackgroundColor;
 
         SpawnCentered();
     }
@@ -73,7 +105,7 @@ public class LevelManager : MonoBehaviour
                     0f
                 );
 
-                LevelData.CellData cellData = level.cellTypes[index];
+                LevelData.CellData cellData = level.CellTypes[index];
                 CellType type = cellData.type;
 
                 Cell prefabToSpawn;
@@ -94,7 +126,7 @@ public class LevelManager : MonoBehaviour
                 }
                 else if (cell is MusicCell musicCell && type == CellType.Note)
                 {
-                    cellData.noteData.soundType = level.soundType;
+                    cellData.noteData.soundType = level.SoundType;
                     musicCell.SetData(cellData.noteData);
                 }
 

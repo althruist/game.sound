@@ -40,22 +40,70 @@ public class LevelData : ScriptableObject
         public NoteData noteData;
     }
 
-    public LevelType levelType;
-    public SoundType soundType;
-    public Difficulty difficulty;
-    public int levelIndex;
-    public int gridSize;
-    public float gridSpacing = 1.1f;
-    public SoundData soundData;
-    public List<CellData> cellTypes;
-    public AudioClip ambience;
+    [System.Serializable]
+    [SerializeField]
+    public struct SentenceText
+    {
+        public Vector3 position;
+        public Vector2 size;
+        public float fontSize;
+    }
 
-    public Color headColor;
-    public Color bodyColor;
-    public Color tileColor;
-    public Color noteColor;
-    public Color sentenceColor;
-    public Color backgroundColor;
+    [SerializeField] private LevelType levelType;
+    [SerializeField] private SoundType soundType;
+    [SerializeField] private Difficulty difficulty;
+    [SerializeField] private int levelIndex;
+    [SerializeField] private int gridSize;
+    [SerializeField] private float gridSpacing = 1.1f;
+    [SerializeField] private SoundData soundData;
+    [SerializeField] private List<CellData> cellTypes;
+
+    [SerializeField] private Color headColor;
+    [SerializeField] private Color bodyColor;
+    [SerializeField] private Color tileColor;
+    [SerializeField] private Color noteColor;
+    [SerializeField] private Color sentenceColor;
+    [SerializeField] private Color backgroundColor;
+    [SerializeField] private int cameraSize;
+    [SerializeField] private SentenceText sentenceTextSettings;
+
+    public LevelType GameLevelType { get; private set; }
+    public SoundType SoundType { get; private set; }
+    public Difficulty GameDifficulty { get; private set; }
+    public int LevelIndex { get; private set; }
+    public int GridSize { get; private set; }
+    public float GridSpacing { get; private set; }
+    public SoundData SoundData { get; private set; }
+    public List<CellData> CellTypes { get; private set; }
+    public Color HeadColor { get; private set; }
+    public Color BodyColor { get; private set; }
+    public Color TileColor { get; private set; }
+    public Color NoteColor { get; private set; }
+    public Color SentenceColor { get; private set; }
+    public Color BackgroundColor { get; private set; }
+    public int CameraSize { get; private set; }
+    public SentenceText SentenceTextSettings { get; private set; }
+
+    private void OnEnable()
+    {
+        GameLevelType = levelType;
+        SoundType = soundType;
+        GameDifficulty = difficulty;
+        LevelIndex = levelIndex;
+        GridSize = gridSize;
+        GridSpacing = gridSpacing;
+        SoundData = soundData;
+        CellTypes = cellTypes;
+
+        HeadColor = headColor;
+        BodyColor = bodyColor;
+        TileColor = tileColor;
+        NoteColor = noteColor;
+        SentenceColor = sentenceColor;
+        BackgroundColor = backgroundColor;
+        CameraSize = cameraSize;
+        SentenceTextSettings= sentenceTextSettings;
+    }
 
     private void OnValidate()
     {

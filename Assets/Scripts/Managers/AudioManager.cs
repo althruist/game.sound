@@ -109,7 +109,6 @@ public class AudioManager : MonoBehaviour
 
         while (timer < duration)
         {
-            Debug.Log(timer);
             timer += Time.deltaTime;
             src.volume = Mathf.Lerp(startVolume, targetVolume, timer / duration);
             yield return null;

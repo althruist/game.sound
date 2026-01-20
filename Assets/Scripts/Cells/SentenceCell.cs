@@ -6,7 +6,7 @@ public class SentenceCell : Cell
     {
         data = sentenceData;
         text.SetText(data.text);
-        text.faceColor = level.sentenceColor;
+        text.faceColor = level.SentenceColor;
     }
 
     public override void Activate()
