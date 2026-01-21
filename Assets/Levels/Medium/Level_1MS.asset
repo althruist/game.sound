@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60f6e706cd2ab4edbb90cbef50557d26, type: 3}
-  m_Name: Level_1ES
+  m_Name: Level_1MS
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelType: 0
   soundType: 0

@@ -75,8 +75,8 @@ public class LevelManager : MonoBehaviour
         }
         
         cam.GetComponent<PixelPerfectCamera>().assetsPPU = level.CameraSize;
-        width = level.GridSize;
-        height = level.GridSize;
+        width = level.GridWidth;
+        height = level.GridHeight;
         spacing = level.GridSpacing;
 
         background.GetComponent<SpriteRenderer>().color = level.BackgroundColor;

@@ -28,6 +28,30 @@ MonoBehaviour:
     noteData:
       soundType: 0
       clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 2
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
   - type: 2
     dataIndex: -1
     sentenceData:
@@ -58,7 +82,7 @@ MonoBehaviour:
       text: 
       clip: {fileID: 0}
     noteData:
-      soundType: 1
+      soundType: 0
       clip: {fileID: 0}
   - type: 0
     dataIndex: -1
@@ -66,7 +90,7 @@ MonoBehaviour:
       text: 
       clip: {fileID: 0}
     noteData:
-      soundType: 1
+      soundType: 0
       clip: {fileID: 0}
   - type: 2
     dataIndex: -1
@@ -74,7 +98,7 @@ MonoBehaviour:
       text: 
       clip: {fileID: 0}
     noteData:
-      soundType: 1
+      soundType: 0
       clip: {fileID: 0}
   - type: 0
     dataIndex: -1
@@ -82,7 +106,7 @@ MonoBehaviour:
       text: 
       clip: {fileID: 0}
     noteData:
-      soundType: 1
+      soundType: 0
       clip: {fileID: 0}
   - type: 2
     dataIndex: -1
@@ -90,7 +114,7 @@ MonoBehaviour:
       text: 
       clip: {fileID: 0}
     noteData:
-      soundType: 2
+      soundType: 0
       clip: {fileID: 0}
   - type: 0
     dataIndex: -1
@@ -98,15 +122,7 @@ MonoBehaviour:
       text: 
       clip: {fileID: 0}
     noteData:
-      soundType: 2
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 2
+      soundType: 0
       clip: {fileID: 0}
   - type: 2
     dataIndex: -1
@@ -114,15 +130,7 @@ MonoBehaviour:
       text: 
       clip: {fileID: 0}
     noteData:
-      soundType: 2
-      clip: {fileID: 0}
-  - type: 2
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 2
+      soundType: 0
       clip: {fileID: 0}
   - type: 0
     dataIndex: -1
@@ -130,15 +138,7 @@ MonoBehaviour:
       text: 
       clip: {fileID: 0}
     noteData:
-      soundType: 2
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 2
+      soundType: 0
       clip: {fileID: 0}
   - type: 2
     dataIndex: -1
@@ -146,7 +146,7 @@ MonoBehaviour:
       text: 
       clip: {fileID: 0}
     noteData:
-      soundType: 2
+      soundType: 0
       clip: {fileID: 0}
   headColor: {r: 1, g: 0.48511443, b: 0.08962262, a: 1}
   bodyColor: {r: 0.6792453, g: 0.1954432, b: 0.1954432, a: 1}

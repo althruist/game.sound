@@ -205,7 +205,7 @@ public class PathManager : MonoBehaviour
             }
         }
 
-        if ((level.GridSize * level.GridSize) == path.cells.Count)
+        if ((level.GridWidth * level.GridHeight) == path.cells.Count)
         {
             List<int> tempCells = new List<int>();
             foreach (Cell el in path.cells)

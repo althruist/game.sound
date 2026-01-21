@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60f6e706cd2ab4edbb90cbef50557d26, type: 3}
-  m_Name: Level_3EM
+  m_Name: Level_2MM
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelType: 1
-  soundType: 1
+  soundType: 0
   difficulty: 1
-  levelIndex: 3
+  levelIndex: 2
   gridSize: 8
   gridSpacing: 1.6
   soundData: {fileID: 11400000, guid: 2044e4ce7eb159841ac749d3c22cfe05, type: 2}
@@ -532,12 +532,12 @@ MonoBehaviour:
     noteData:
       soundType: 0
       clip: {fileID: 0}
-  headColor: {r: 1, g: 0.23113209, b: 0.49639904, a: 1}
-  bodyColor: {r: 1, g: 0.3338085, b: 0.2971698, a: 1}
-  tileColor: {r: 0.5849056, g: 0.26210395, b: 0.463688, a: 1}
-  noteColor: {r: 0.9434373, g: 0.19999997, b: 0.99215686, a: 1}
+  headColor: {r: 1, g: 0.48511443, b: 0.08962262, a: 1}
+  bodyColor: {r: 0.6792453, g: 0.1954432, b: 0.1954432, a: 1}
+  tileColor: {r: 0.266352, g: 0.16197936, b: 0.3773585, a: 1}
+  noteColor: {r: 1, g: 0.7169811, b: 0.15566039, a: 1}
   sentenceColor: {r: 1, g: 0.504717, b: 0.504717, a: 1}
-  backgroundColor: {r: 0.3490566, g: 0.18276076, b: 0.23760556, a: 1}
+  backgroundColor: {r: 0.14684944, g: 0.11650054, b: 0.20754719, a: 1}
   cameraSize: 77
   sentenceTextSettings:
     position: {x: 0, y: -5.7, z: 0}

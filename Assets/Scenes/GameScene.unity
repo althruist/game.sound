@@ -369,8 +369,11 @@ MonoBehaviour:
   levels:
   - {fileID: 11400000, guid: b819c6a4528e44e5d97d237a67122d41, type: 2}
   - {fileID: 11400000, guid: 6e9a9a737ba55c14c938a17825e9f1a1, type: 2}
+  - {fileID: 11400000, guid: 6a6bfb3b8efa56243abbd46bcd3fe534, type: 2}
   - {fileID: 11400000, guid: b46f87db0c8680541be203ec9311fb35, type: 2}
+  - {fileID: 11400000, guid: 49bf8270f4b5d9b43a26284b6339928f, type: 2}
   - {fileID: 11400000, guid: c6ba00c4ca0524a4d839770ad4061407, type: 2}
+  - {fileID: 11400000, guid: 218ffa659c6fd5341be0f98008926b27, type: 2}
   cam: {fileID: 0}
   cellPrefab: {fileID: -399518575946205436, guid: 3c9d1aad19ee9a040b0518aa4d7bfc9d, type: 3}
   musicCellPrefab: {fileID: -8728676299187468600, guid: 01cf29f9ed0b4d94eb99293c3d8e9456, type: 3}
@@ -859,8 +862,11 @@ MonoBehaviour:
   easyLevels:
   - {fileID: 11400000, guid: b819c6a4528e44e5d97d237a67122d41, type: 2}
   - {fileID: 11400000, guid: 6e9a9a737ba55c14c938a17825e9f1a1, type: 2}
+  - {fileID: 11400000, guid: 6a6bfb3b8efa56243abbd46bcd3fe534, type: 2}
   - {fileID: 11400000, guid: b46f87db0c8680541be203ec9311fb35, type: 2}
+  - {fileID: 11400000, guid: 49bf8270f4b5d9b43a26284b6339928f, type: 2}
   - {fileID: 11400000, guid: c6ba00c4ca0524a4d839770ad4061407, type: 2}
+  - {fileID: 11400000, guid: 218ffa659c6fd5341be0f98008926b27, type: 2}
   mediumLevels:
   - {fileID: 11400000, guid: 8eab2e505329cb443ad3aa5b20b58953, type: 2}
   - {fileID: 11400000, guid: 13a09b589a9d352409919e9b88cfecc2, type: 2}
@@ -871,8 +877,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ddf6b30aa2c3562489076e82d5ad3664, type: 2}
   - {fileID: 11400000, guid: ee31d8be88be454419ef40606e103e05, type: 2}
   - {fileID: 11400000, guid: 2119852f7057e4248a8b7aeb2f1773c6, type: 2}
-  songsCompleted: 0
-  songTempo: 0
 --- !u!4 &2029280478
 Transform:
   m_ObjectHideFlags: 0

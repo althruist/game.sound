@@ -53,7 +53,8 @@ public class LevelData : ScriptableObject
     [SerializeField] private SoundType soundType;
     [SerializeField] private Difficulty difficulty;
     [SerializeField] private int levelIndex;
-    [SerializeField] private int gridSize;
+    [SerializeField] private int gridWidth;
+    [SerializeField] private int gridHeight;
     [SerializeField] private float gridSpacing = 1.1f;
     [SerializeField] private SoundData soundData;
     [SerializeField] private List<CellData> cellTypes;
@@ -71,7 +72,8 @@ public class LevelData : ScriptableObject
     public SoundType SoundType { get; private set; }
     public Difficulty GameDifficulty { get; private set; }
     public int LevelIndex { get; private set; }
-    public int GridSize { get; private set; }
+    public int GridWidth { get; private set; }
+    public int GridHeight { get; private set; }
     public float GridSpacing { get; private set; }
     public SoundData SoundData { get; private set; }
     public List<CellData> CellTypes { get; private set; }
@@ -90,7 +92,8 @@ public class LevelData : ScriptableObject
         SoundType = soundType;
         GameDifficulty = difficulty;
         LevelIndex = levelIndex;
-        GridSize = gridSize;
+        GridWidth = gridWidth;
+        GridHeight = gridHeight;
         GridSpacing = gridSpacing;
         SoundData = soundData;
         CellTypes = cellTypes;
@@ -102,14 +105,15 @@ public class LevelData : ScriptableObject
         SentenceColor = sentenceColor;
         BackgroundColor = backgroundColor;
         CameraSize = cameraSize;
-        SentenceTextSettings= sentenceTextSettings;
+        SentenceTextSettings = sentenceTextSettings;
     }
 
     private void OnValidate()
     {
-        if (gridSize < 1) gridSize = 1;
+        if (gridWidth < 1) gridWidth = 1;
+        if (gridHeight < 1) gridHeight = 1;
 
-        int required = gridSize * gridSize;
+        int required = gridWidth * gridHeight;
 
         if (cellTypes == null) cellTypes = new List<CellData>(required);
 

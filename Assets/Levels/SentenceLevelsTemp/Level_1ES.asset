@@ -16,11 +16,20 @@ MonoBehaviour:
   soundType: 0
   difficulty: 0
   levelIndex: 1
-  gridSize: 4
+  gridWidth: 4
+  gridHeight: 4
   gridSpacing: 1.2
   soundData: {fileID: 0}
   cellTypes:
   - type: 3
+    dataIndex: 0
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
     dataIndex: 1
     sentenceData:
       text: 
@@ -28,16 +37,8 @@ MonoBehaviour:
     noteData:
       soundType: 0
       clip: {fileID: 0}
-  - type: 0
-    dataIndex: 2
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
   - type: 1
-    dataIndex: 3
+    dataIndex: 2
     sentenceData:
       text: i
       clip: {fileID: 8300000, guid: 9456aa2b53f6a9e46b9362872ee687a8, type: 3}
@@ -45,7 +46,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 0
-    dataIndex: 4
+    dataIndex: 3
     sentenceData:
       text: 
       clip: {fileID: 0}
@@ -53,7 +54,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 0
-    dataIndex: 10
+    dataIndex: 9
     sentenceData:
       text: 
       clip: {fileID: 0}
@@ -61,7 +62,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 1
-    dataIndex: 9
+    dataIndex: 8
     sentenceData:
       text: find
       clip: {fileID: 8300000, guid: 507aafd6e3cf51247837f5038e8da99d, type: 3}
@@ -69,7 +70,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 0
-    dataIndex: 6
+    dataIndex: 5
     sentenceData:
       text: 
       clip: {fileID: 0}
@@ -77,7 +78,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 1
-    dataIndex: 5
+    dataIndex: 4
     sentenceData:
       text: need
       clip: {fileID: 8300000, guid: d0bdc9d5d34851e4e9511f856de0a911, type: 3}
@@ -85,7 +86,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 1
-    dataIndex: 11
+    dataIndex: 10
     sentenceData:
       text: my
       clip: {fileID: 8300000, guid: ba4f04da8d1da4145803a49c420c0be7, type: 3}
@@ -93,7 +94,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 0
-    dataIndex: 8
+    dataIndex: 7
     sentenceData:
       text: 
       clip: {fileID: 0}
@@ -101,7 +102,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 1
-    dataIndex: 7
+    dataIndex: 6
     sentenceData:
       text: to
       clip: {fileID: 8300000, guid: e218b3718b3a5354c81d2ea9f939ccd1, type: 3}
@@ -109,7 +110,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 1
-    dataIndex: 16
+    dataIndex: 15
     sentenceData:
       text: again
       clip: {fileID: 8300000, guid: 9f47b11c026e90d4e9134a58602c646c, type: 3}
@@ -117,7 +118,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 0
-    dataIndex: 12
+    dataIndex: 11
     sentenceData:
       text: 
       clip: {fileID: 0}
@@ -125,7 +126,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 1
-    dataIndex: 13
+    dataIndex: 12
     sentenceData:
       text: song
       clip: {fileID: 8300000, guid: d18097a90feb90a4d976f044961a2375, type: 3}
@@ -133,7 +134,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 0
-    dataIndex: 14
+    dataIndex: 13
     sentenceData:
       text: 
       clip: {fileID: 0}
@@ -141,7 +142,7 @@ MonoBehaviour:
       soundType: 0
       clip: {fileID: 0}
   - type: 0
-    dataIndex: 15
+    dataIndex: 14
     sentenceData:
       text: 
       clip: {fileID: 0}
