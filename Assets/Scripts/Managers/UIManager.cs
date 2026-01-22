@@ -20,7 +20,6 @@ public class UIManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     public void FeedbackSound(string soundName)

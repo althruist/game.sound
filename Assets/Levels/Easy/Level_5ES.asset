@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f6e706cd2ab4edbb90cbef50557d26, type: 3}
+  m_Name: Level_5ES
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelType: 0
+  soundType: 0
+  difficulty: 0
+  levelIndex: 5
+  gridWidth: 4
+  gridHeight: 4
+  gridSpacing: 1.2
+  soundData: {fileID: 0}
+  cellTypes:
+  - type: 1
+    dataIndex: 15
+    sentenceData:
+      text: again
+      clip: {fileID: 8300000, guid: 2325176ba1928db43bed19a6c903b36a, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 1
+    dataIndex: 4
+    sentenceData:
+      text: my
+      clip: {fileID: 8300000, guid: 69ced80e43cb2d04a8eba592c91dd4ec, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 3
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 1
+    dataIndex: 2
+    sentenceData:
+      text: find
+      clip: {fileID: 8300000, guid: 8cf563018bdc31642a60ce3eab434ef9, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 14
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 5
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 3
+    dataIndex: 0
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 13
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 1
+    dataIndex: 6
+    sentenceData:
+      text: peace
+      clip: {fileID: 8300000, guid: 7c1d41bd1f449684d82adfe88988d78b, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 7
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 1
+    dataIndex: 8
+    sentenceData:
+      text: once
+      clip: {fileID: 8300000, guid: 34e0827186899a947a2c7c260992d6d1, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 12
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 11
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 1
+    dataIndex: 10
+    sentenceData:
+      text: more
+      clip: {fileID: 8300000, guid: 4cbbbf115f6b09346b2a90efc293fe6c, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 9
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  headColor: {r: 0.49411762, g: 0.8420299, b: 1, a: 1}
+  bodyColor: {r: 0, g: 0.4047594, b: 1, a: 1}
+  tileColor: {r: 0.2796425, g: 0.09531861, b: 0.3962264, a: 1}
+  noteColor: {r: 1, g: 0.2028302, b: 0.4924875, a: 1}
+  sentenceColor: {r: 1, g: 0.22232756, b: 0.08962262, a: 1}
+  backgroundColor: {r: 0.15314254, g: 0.08624065, b: 0.3207547, a: 1}
+  cameraSize: 120
+  sentenceTextSettings:
+    position: {x: 0, y: -3, z: 0}
+    size: {x: 15, y: 5}
+    fontSize: 6.46

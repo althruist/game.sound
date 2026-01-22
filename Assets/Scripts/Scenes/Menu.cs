@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
@@ -18,6 +19,10 @@ public class Menu : MonoBehaviour
 
     void Start()
     {
+        foreach (Button button in buttons)
+        {
+            button.interactable = true;
+        }
         CinematicLetterbox.Instance.active = false;
         PlayButton.onClick.AddListener(Play);
         DifficultyButton.onClick.AddListener(delegate { ToggleWindow(UI.transform.Find("DifficultyWindow").gameObject); });
@@ -59,6 +64,12 @@ public class Menu : MonoBehaviour
         videoPlayer.GetComponent<Animator>().Play("SlideAnim");
         text.SetActive(false);
         UIManager.Instance.ClickAnimationAll();
+        yield return new WaitForSeconds(1f);
+        foreach (Button button in buttons)
+        {
+            button.interactable = false;
+            button.GetComponent<EventTrigger>().enabled = false;
+        }
         yield return new WaitForSeconds(48f);
         GameManager.Instance.LoadGameWithDifficulty(chosenDifficulty);
     }
