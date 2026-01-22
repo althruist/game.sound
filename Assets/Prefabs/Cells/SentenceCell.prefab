@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.603}
-  m_SizeDelta: {x: 4, y: 1}
+  m_SizeDelta: {x: 8, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &3415146875514302960
 MeshRenderer:
@@ -358,6 +358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SentenceCell
   vfx: {fileID: 8064271930536380845}
   text: {fileID: 9026483430996236278}
+  sound: {fileID: 0}
 --- !u!1 &8064271930536380845
 GameObject:
   m_ObjectHideFlags: 0

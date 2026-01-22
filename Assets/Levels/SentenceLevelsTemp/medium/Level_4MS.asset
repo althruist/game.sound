@@ -10,18 +10,138 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60f6e706cd2ab4edbb90cbef50557d26, type: 3}
-  m_Name: Level_1MS
+  m_Name: Level_4MS
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelType: 0
   soundType: 0
   difficulty: 1
-  levelIndex: 1
+  levelIndex: 4
   gridWidth: 8
   gridHeight: 4
-  gridSpacing: 1.6
+  gridSpacing: 1.2
   soundData: {fileID: 0}
   cellTypes:
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 4
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 3
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 2
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 5
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
   - type: 3
+    dataIndex: 0
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
     dataIndex: 1
     sentenceData:
       text: 
@@ -29,7 +149,7 @@ MonoBehaviour:
     noteData:
       soundType: 0
       clip: {fileID: 0}
-  - type: 1
+  - type: 0
     dataIndex: -1
     sentenceData:
       text: 
@@ -37,7 +157,7 @@ MonoBehaviour:
     noteData:
       soundType: 0
       clip: {fileID: 0}
-  - type: 1
+  - type: 0
     dataIndex: -1
     sentenceData:
       text: 
@@ -45,7 +165,7 @@ MonoBehaviour:
     noteData:
       soundType: 0
       clip: {fileID: 0}
-  - type: 1
+  - type: 0
     dataIndex: -1
     sentenceData:
       text: 
@@ -53,7 +173,7 @@ MonoBehaviour:
     noteData:
       soundType: 0
       clip: {fileID: 0}
-  - type: 1
+  - type: 0
     dataIndex: -1
     sentenceData:
       text: 
@@ -61,7 +181,7 @@ MonoBehaviour:
     noteData:
       soundType: 0
       clip: {fileID: 0}
-  - type: 1
+  - type: 0
     dataIndex: -1
     sentenceData:
       text: 
@@ -69,8 +189,24 @@ MonoBehaviour:
     noteData:
       soundType: 0
       clip: {fileID: 0}
-  - type: 1
-    dataIndex: -1
+  - type: 0
+    dataIndex: 6
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 7
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 8
     sentenceData:
       text: 
       clip: {fileID: 0}
@@ -141,150 +277,14 @@ MonoBehaviour:
     noteData:
       soundType: 0
       clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 0
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  headColor: {r: 0.495283, g: 0.6364667, b: 1, a: 1}
-  bodyColor: {r: 0.19339621, g: 0.42455432, b: 1, a: 1}
-  tileColor: {r: 0.071021706, g: 0.13363837, b: 0.26415092, a: 1}
+  headColor: {r: 0.42114633, g: 0.9811321, b: 0.9410383, a: 1}
+  bodyColor: {r: 0.19215685, g: 0.67655027, b: 1, a: 1}
+  tileColor: {r: 0.3962264, g: 0.08036668, b: 0.20589413, a: 1}
   noteColor: {r: 1, g: 0.2028302, b: 0.4924875, a: 1}
-  sentenceColor: {r: 1, g: 0.53994554, b: 0.2971698, a: 1}
-  backgroundColor: {r: 0.026833398, g: 0.037081458, b: 0.084905684, a: 1}
-  cameraSize: 77
+  sentenceColor: {r: 1, g: 0.43750682, b: 0.15566039, a: 1}
+  backgroundColor: {r: 0.4528302, g: 0.12175151, b: 0.40224877, a: 1}
+  cameraSize: 120
   sentenceTextSettings:
-    position: {x: 0, y: -5.7, z: 0}
-    size: {x: 24, y: 7}
-    fontSize: 9
+    position: {x: 0, y: -3, z: 0}
+    size: {x: 15, y: 5}
+    fontSize: 6.46

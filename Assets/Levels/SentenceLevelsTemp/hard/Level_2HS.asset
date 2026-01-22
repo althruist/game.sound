@@ -1,0 +1,546 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f6e706cd2ab4edbb90cbef50557d26, type: 3}
+  m_Name: Level_2HS
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelType: 0
+  soundType: 0
+  difficulty: 2
+  levelIndex: 2
+  gridWidth: 8
+  gridHeight: 8
+  gridSpacing: 1.2
+  soundData: {fileID: 0}
+  cellTypes:
+  - type: 3
+    dataIndex: 0
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 1
+    dataIndex: 3
+    sentenceData:
+      text: back
+      clip: {fileID: 8300000, guid: 2f31dc9dc9f940549b0c7754cba842d2, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 4
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 1
+    dataIndex: 15
+    sentenceData:
+      text: me
+      clip: {fileID: 8300000, guid: fd564c15a87e4ea4a90cb17dbbf31426, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 1
+    dataIndex: 1
+    sentenceData:
+      text: take
+      clip: {fileID: 8300000, guid: 9e2a69d7bd4305d439a16ed73304f23e, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 2
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 1
+    dataIndex: 5
+    sentenceData:
+      text: what
+      clip: {fileID: 8300000, guid: 4da1733fc35063f4982fd7fb305e435b, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 14
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 8
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 1
+    dataIndex: 7
+    sentenceData:
+      text: belongs
+      clip: {fileID: 8300000, guid: cb07fb29e3c3b994bbcf2b840b3b4c10, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 6
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 13
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 9
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 10
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: 11
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 1
+    dataIndex: 12
+    sentenceData:
+      text: to
+      clip: {fileID: 8300000, guid: 2fd56c4eaa0cd7a4c943c9b6bf7289a5, type: 3}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  headColor: {r: 0.35857958, g: 0.37569842, b: 0.9622642, a: 1}
+  bodyColor: {r: 0, g: 0.47942042, b: 1, a: 1}
+  tileColor: {r: 0.18701626, g: 0.15886435, b: 0.3207547, a: 1}
+  noteColor: {r: 1, g: 0.2028302, b: 0.4924875, a: 1}
+  sentenceColor: {r: 0.9811321, g: 0.3796288, b: 0.18974723, a: 1}
+  backgroundColor: {r: 0.0773407, g: 0.09470161, b: 0.20754719, a: 1}
+  cameraSize: 120
+  sentenceTextSettings:
+    position: {x: 0, y: -3, z: 0}
+    size: {x: 15, y: 5}
+    fontSize: 6.46

@@ -10,73 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60f6e706cd2ab4edbb90cbef50557d26, type: 3}
-  m_Name: Level_1MS
+  m_Name: Level_6MS
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelType: 0
   soundType: 0
   difficulty: 1
-  levelIndex: 1
+  levelIndex: 6
   gridWidth: 8
   gridHeight: 4
-  gridSpacing: 1.6
+  gridSpacing: 1.2
   soundData: {fileID: 0}
   cellTypes:
-  - type: 3
-    dataIndex: 1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 1
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 1
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 1
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 1
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 1
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
-  - type: 1
-    dataIndex: -1
-    sentenceData:
-      text: 
-      clip: {fileID: 0}
-    noteData:
-      soundType: 0
-      clip: {fileID: 0}
   - type: 0
     dataIndex: -1
     sentenceData:
@@ -277,14 +221,70 @@ MonoBehaviour:
     noteData:
       soundType: 0
       clip: {fileID: 0}
-  headColor: {r: 0.495283, g: 0.6364667, b: 1, a: 1}
-  bodyColor: {r: 0.19339621, g: 0.42455432, b: 1, a: 1}
-  tileColor: {r: 0.071021706, g: 0.13363837, b: 0.26415092, a: 1}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  - type: 0
+    dataIndex: -1
+    sentenceData:
+      text: 
+      clip: {fileID: 0}
+    noteData:
+      soundType: 0
+      clip: {fileID: 0}
+  headColor: {r: 0.49411762, g: 1, b: 0.90003145, a: 1}
+  bodyColor: {r: 0, g: 0.47320843, b: 1, a: 1}
+  tileColor: {r: 0.6886792, g: 0.2841593, b: 0.068218224, a: 1}
   noteColor: {r: 1, g: 0.2028302, b: 0.4924875, a: 1}
-  sentenceColor: {r: 1, g: 0.53994554, b: 0.2971698, a: 1}
-  backgroundColor: {r: 0.026833398, g: 0.037081458, b: 0.084905684, a: 1}
-  cameraSize: 77
+  sentenceColor: {r: 0.9622642, g: 0.7048899, b: 0.27687788, a: 1}
+  backgroundColor: {r: 0.8396226, g: 0.39954746, b: 0.13861692, a: 1}
+  cameraSize: 120
   sentenceTextSettings:
-    position: {x: 0, y: -5.7, z: 0}
-    size: {x: 24, y: 7}
-    fontSize: 9
+    position: {x: 0, y: -3, z: 0}
+    size: {x: 15, y: 5}
+    fontSize: 6.46
