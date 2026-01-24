@@ -175,6 +175,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicCell
   vfx: {fileID: 8064271930536380845}
+  text: {fileID: 0}
+  sound: {fileID: 0}
+  data:
+    soundType: 0
+    clip: {fileID: 0}
 --- !u!1 &8064271930536380845
 GameObject:
   m_ObjectHideFlags: 0

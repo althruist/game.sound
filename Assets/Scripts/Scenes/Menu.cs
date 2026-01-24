@@ -4,11 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityEngine.Video;
 
 public class Menu : MonoBehaviour
 {
-
     [SerializeField] Canvas UI;
     [SerializeField] List<Button> buttons;
     [SerializeField] GameObject text;

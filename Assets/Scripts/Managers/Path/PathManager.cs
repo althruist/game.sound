@@ -84,8 +84,6 @@ public class PathManager : MonoBehaviour
             if (GameManager.Instance.currentLevel.GameDifficulty == level.GameDifficulty && level.LevelIndex - GameManager.Instance.currentLevel.LevelIndex == 1)
             {
                 newLevel = level;
-            } else
-            {
             }
         }
 
